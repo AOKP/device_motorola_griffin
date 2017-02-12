@@ -6,12 +6,6 @@
     "branch":       "cm-14.1"
   },
   {
-    "remote":      "github",
-    "repository":  "boulzordev/proprietary_vendor_motorola_griffin",
-    "target_path": "vendor/motorola/griffin",
-    "branch":      "cm-14.1"
-  },
-  {
     "target_path": "device/qcom/common",
     "repository":  "android_device_qcom_common",
     "remote":      "cm"

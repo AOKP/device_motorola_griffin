@@ -3,7 +3,13 @@
     "remote":      "github",
     "repository":  "boulzordev/android_kernel_motorola_msm8996",
     "target_path": "kernel/motorola/msm8996",
-    "branch":       "cm-14.1"
+    "branch":      "cm-14.1"
+  },
+  {
+    "remote":      "github",
+    "repository":  "boulzordev/proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "branch":      "nougat"
   },
   {
     "target_path": "device/qcom/common",

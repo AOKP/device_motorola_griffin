@@ -161,8 +161,15 @@ TARGET_USES_QCOM_MM_AUDIO := true
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# Dexpreopt
-WITH_DEXPREOPT := false
+# Enable dexpreopt to speed boot time
+ifeq ($(HOST_OS),linux)
+    ifneq ($(TARGET_BUILD_VARIANT),eng)
+        ifeq ($(WITH_DEXPREOPT),)
+            WITH_DEXPREOPT := true
+            WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+        endif
+    endif
+endif
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := msm8996
